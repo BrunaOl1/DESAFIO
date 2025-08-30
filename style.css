@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:Android;
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+    font-weight: normal;
+}
+:root {
+    --cor01: #c5ebd6;
+    --cor02: #83e1ad;
+    --cor03: #4cae83;
+    --cor04: #2d6a4f;
+    --cor05: #1b4332;
+    --cor06: #081c15;
+    --fontepadrão: Arial, Helvetica, sans-serif;
+    --fontedestaque: sans-serif;  
+    --fonteandroid: Android, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #c5ebd6;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    background-color: var(--cor04);
+    min-height: 150px; 
+    text-align: center; 
+    padding: 15px 10px; /* Espaçamento interno */
+}
+
+header h1{
+  color: var(--cor01);
+  font-family: var(--fontedestaque);
+  margin-top: 30px; /* Espaçamento acima do título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+ }
+
+ header p{
+    margin-top: 40px;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+ }
+
+ main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(18, 16, 16);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+main h1{
+    color: var(--cor06);
+    font-family: var(--fonteandroid);
+}
+
+main strong{
+    color: var(--cor05);
+    text-decoration: underline; /* Sublinha o texto */
+    background-color: var(--cor01);
+    padding: 7px;
+}
+
+main p{ 
+    text-align: justify;
+    margin: 15px 0;
+    text-indent: 30px; /* Adiciona um recuo na primeira linha */
+    line-height: 1em; /* Espaçamento entre linhas */
+    font-size: medium; /* Tamanho da fonte */
+
+}  
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor03);
+    background-color: var(--cor05);
+    padding: 3px 2px;
+    margin-bottom: 3px;
+}
+
+main div.video {
+   text-align: center;
+   margin: 0px -20px 30px -20px; /* Ajusta a margem para alinhar com o padding do main */
+   padding: 20px;
+   padding-bottom: 58%; /* Ajusta as bordas laterais do vídeo*/
+   background-color: var(--cor03);
+   position: relative; /* Necessário para o posicionamento absoluto do iframe */
+}
+div.video iframe{
+    position: absolute; /* Posiciona o iframe de forma absoluta dentro do contêiner */
+    top: 5%; /* Ajusta a posição superior */
+    left: 5%;/* Ajusta a posição esquerda */
+    width: 90%;/* Ajusta a largura para preencher o contêiner */
+    height: 90%; /* Ajusta a altura para preencher o contêiner */
+}
+nav{
+    background-color: var(--cor05); 
+    padding: 10px;
+
+}
+
+nav a{
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s; /* Adiciona uma transição suave */
+}
+
+nav a:hover{  /* Efeito ao passar o mouse */
+    background-color: var(--cor02);
+    color: var(--cor06);
+    border-radius: 5px; /* Adiciona cantos arredondados */
+}
+
+aside{
+    background-color: var(--cor03);
+    color: white;
+    padding: 6px 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+aside ul{
+    columns: 2; /* Divide a lista em duas colunas */
+}    
+
+footer{
+    background-color: var(--cor06);
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+footer a{
+    color: var(--cor02);
+    text-decoration: none;
+    font-weight: bold;}
+
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor01);   
+}
+footer a:visited{ /* Cor para links visitados */
+    color: var(--cor04);
+
+}
